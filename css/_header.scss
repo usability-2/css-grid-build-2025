@@ -1,0 +1,32 @@
+@use 'colours' as *;
+
+header {
+    padding: 1rem;
+    border-bottom: 1px solid $grey;
+    box-shadow: 0 0 8px $grey;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    button {
+        padding: 0.75rem;
+        background-color: #fff;
+        border: none;
+        svg {
+            width: 50px;
+        }
+    }
+    nav {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height linear 1s;
+        flex: 0 0 100%;
+        a {
+            display: block;
+            padding: 0.5rem;
+        }
+    }
+}
+
+.show-nav {
+    max-height: 200px;
+}
