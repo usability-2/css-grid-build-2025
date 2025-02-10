@@ -7,5 +7,33 @@ body {
 }
 
 .grid-container {
+    max-width: 1800px;
+    margin: 0 auto;
     padding: 1rem;
+    display: grid;
+    gap: 2.25rem;
+}
+
+@media (min-width: 1000px) {
+    .grid-container {
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    section {
+        grid-column: span 6;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1300px) {
+    .recent-posts {
+        grid-column: span 8;
+    }
+
+    .popular-posts {
+        grid-column: span 4;
+    }
 }

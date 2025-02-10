@@ -1,0 +1,16 @@
+.recent-posts {
+    // as a grid child, this is being stretched in height. Align-self: start will overwrite the stetch and align it to the top of the grid
+    align-self: start;
+    display: grid;
+    gap: 1.25rem;
+}
+
+@media (min-width: 1300px) {
+    .recent-posts {
+        grid-template-columns: repeat(2, 1fr);
+        h2,
+        article:first-of-type {
+            grid-column: span 2;
+        }
+    }
+}

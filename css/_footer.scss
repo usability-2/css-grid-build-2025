@@ -1,0 +1,9 @@
+footer {
+    display: flex;
+    flex-flow: wrap;
+    gap: 1.25rem;
+    div {
+        margin-bottom: 1.25rem;
+        flex: 1 0 auto;
+    }
+}
